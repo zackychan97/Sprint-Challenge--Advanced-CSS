@@ -10,19 +10,27 @@
     text-decoration: none;
 }
 
+.mix-in3{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    
+}
+
 
 
 //parametric mixins
 
-.p-mix-in1(@button-width, @button-justify){
+.p-mix-in1(@button-width){
     display: flex;
-    justify-content: @button-justify;
+    
 }
 
 
-.p-mix-in2(@button-bg-color, @parametric-color, @parametric-fSize, @button-width){
+.p-mix-in2(@button-bg-color, @parametric-color, @parametric-fSize, @button-width, @button-justify){
     background: @button-bg-color;
     color: @parametric-color;
     font-size: @parametric-fSize;
     width: @button-width;
+    justify-content: @button-justify;
 }

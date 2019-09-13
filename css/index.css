@@ -7,6 +7,11 @@
   justify-content: space-between;
   text-decoration: none;
 }
+.mix-in3 {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -189,6 +194,11 @@ p {
   justify-content: space-between;
   text-decoration: none;
 }
+.home .nav-div .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #F1F1F1;
@@ -242,13 +252,15 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn button {
-  border: 1px solid orange;
-  display: flex;
-  justify-content: 3rem;
   background: black;
   color: white;
   font-size: 2rem;
   width: 30%;
+  justify-content: center;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: lightcoral;
+  color: blueviolet;
 }
 .home .walk .walk-img {
   width: 46%;
