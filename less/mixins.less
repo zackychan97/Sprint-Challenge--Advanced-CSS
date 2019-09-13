@@ -16,12 +16,13 @@
 
 .p-mix-in1(@button-width, @button-justify){
     display: flex;
-    width: @button-width;
     justify-content: @button-justify;
 }
 
 
-.p-mix-in2(@parametric-color, @parametric-fSize){
+.p-mix-in2(@button-bg-color, @parametric-color, @parametric-fSize, @button-width){
+    background: @button-bg-color;
     color: @parametric-color;
     font-size: @parametric-fSize;
+    width: @button-width;
 }
