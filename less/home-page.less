@@ -43,23 +43,27 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .mix-in1(); //mix in 1 added
 
     .walk-text {
       width: 50%;
 
       h3 {
         margin-bottom: 10px;
-      }
+      }//closes h3
 
       p {
         margin-bottom: 26px;
-      }
+      }//closes p
 
       .btn {
-      }
-    }
+          border: 1px solid orange;
+          .p-mix-in1(orange, 3rem);
+
+          
+
+      }//closes btn
+    }// closes walk-text
 
     .walk-img {
       width: 46%;
@@ -69,7 +73,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
+      }//closes img
+    }//closes walk-img
+  }//closes walk
 }// home

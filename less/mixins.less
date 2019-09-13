@@ -1,1 +1,27 @@
 // Mixins Here
+.mix-in1{
+    display: flex;
+    justify-content: center;
+}
+
+.mix-in2{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+
+//parametric mixins
+
+.p-mix-in1(@button-width, @button-justify){
+    display: flex;
+    width: @button-width;
+    justify-content: @button-justify;
+}
+
+
+.p-mix-in2(@parametric-color, @parametric-fSize){
+    color: @parametric-color;
+    font-size: @parametric-fSize;
+}
