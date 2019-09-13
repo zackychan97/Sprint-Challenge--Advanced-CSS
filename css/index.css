@@ -208,6 +208,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -246,14 +251,23 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -272,9 +286,20 @@ footer {
   background-color: lightcoral;
   color: blueviolet;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
-  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
