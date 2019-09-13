@@ -10,7 +10,8 @@
 .mix-in3 {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding: 2rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -175,7 +176,6 @@ p {
   margin: 0 auto;
 }
 .home .nav-div {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
@@ -184,10 +184,8 @@ p {
 .home .nav-div .nav-header {
   font-size: 3rem;
   padding-bottom: 1.2rem;
-  border: 2px solid green;
-  padding-left: 15%;
-  padding-right: 20%;
   width: 100%;
+  padding-left: 27%;
 }
 .home .nav-div .nav-links {
   display: flex;
@@ -197,7 +195,8 @@ p {
 .home .nav-div .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding: 2rem;
 }
 footer {
   color: #22283B;
@@ -219,6 +218,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
