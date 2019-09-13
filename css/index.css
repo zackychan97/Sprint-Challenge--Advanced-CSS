@@ -160,6 +160,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home .nav-div {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+.intro {
+  border: 2px solid blue;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
