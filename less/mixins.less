@@ -1,1 +1,37 @@
 // Mixins Here
+.mix-in1{
+    display: flex;
+    justify-content: center;
+}
+
+.mix-in2{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.mix-in3{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 2rem;
+    
+}
+
+
+
+//parametric mixins
+
+.p-mix-in1(@button-width){
+    display: flex;
+    
+}
+
+
+.p-mix-in2(@button-bg-color, @parametric-color, @parametric-fSize, @button-width, @button-justify){
+    background: @button-bg-color;
+    color: @parametric-color;
+    font-size: @parametric-fSize;
+    width: @button-width;
+    justify-content: @button-justify;
+}

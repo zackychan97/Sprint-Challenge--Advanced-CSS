@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+        responsive websites adapt to the size of their container (screen size) and are sort of liquidy or fluid in how it adapts via media queries where as adaptive uses breakpoints.
+
 
 2. Describe what it means to be mobile first vs desktop first.
+        Mobile first is designing a website with the base CSS (no media queries need for smallest resolution) written for mobile devices. You would then use media queries and work your way up to desktop. Desktop first is the exact opposite, our initial CSS would be for our Desktop version and then we would use media queries to work our way down.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+        This font size takes .625 multiplied by 16px, the standard px size. The result is we get a decimal percentage as an answer, and with no longer having pixels as our sizing, we can be responsive. So .625 times 16px converted to pixels would be 10 pixels. So then rem allows us to multiply that, because its alot easier to do the math with units of 10. 
+
 
 4. How would you describe preprocessing to someone new to CSS?
+        I would say it is a translator for computers. The compiler we are using sort of seems like a translator between two parties, and those two parties just speak different dialects of the same language. So the overall idea of the language is quite similar but there are also differences.
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+        So far my favorite concept in preprocessing has been nesting, variables, and mix-ins. I think the logic of it is fun. I guess just making sure my compiler is running, I have to go into the TK to remember the line of code that starts it but that is no big deal. 
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
